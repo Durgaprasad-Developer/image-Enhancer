@@ -1,0 +1,144 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #4f46e5;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .editor {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .editor input[type="file"] {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            padding: 1rem;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .editor .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .editor button {
+            background: #4f46e5;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .editor button:hover {
+            background: #6c63ff;
+        }
+
+        .output {
+            text-align: center;
+        }
+
+        .output img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-top: 2rem;
+        }
+
+        #canvasContainer {
+            display: none;
+        }
+
+        canvas {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-top: 2rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .download-btn:hover {
+            background: #6c63ff;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .slider-container {
+            margin-top: 2rem;
+            display: none;
+            text-align: left;
+        }
+
+        .slider-container label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .slider-container input {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
